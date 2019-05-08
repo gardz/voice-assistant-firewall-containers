@@ -12,7 +12,7 @@ This decouples the solution into a couple of independent micro-services to simpl
 - actions.py: take input values and actions from the messages on the bus and carry out resulting actions (i.e. create containerised firewall, push new security policy to a specific firewall, etc). 
 
 
-# Notes on the setup:
+# Extra Notes
 
 Sign up to:
   IFTTT.com: to simplify linking Google Home into the Message Bus
