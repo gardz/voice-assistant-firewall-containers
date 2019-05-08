@@ -1,6 +1,12 @@
 # Google Assistant / Google Home paired with Container Firewalls
 
-This was designed to link a voice assistant such as Google Assistant to
+This was designed to link a voice assistant such as Google Assistant / Google Home / Apple Siri / Amazon Alexa into SDN and Networking use cases. This enables a more fluent interaction between technologies that have typically been under the control of only IT professionals  with high levels of training, where now any person can use every day language to enact changes.
+
+The two use cases demonstrated here are:
+- Create X number of docker container firewalls (Juniper cSRX) in specific region(s) Y, which boot up in under 2 seconds.
+- Push security policies based on voice commands, for example a teacher in a classroom can request "Ok Google, stop social media for 1 hour in the classroom" which pushes the resulting Layer 7 application firewall policy in block Social Media in the Classroom in order to focus the attention of students for the 1 hour duration of that class. 
+
+The use cases are limitless. 
 
 # Architecture 
 
