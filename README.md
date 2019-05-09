@@ -41,8 +41,8 @@ This decouples the solution into a couple of independent micro-services to simpl
 # Extra Notes
 
 Sign up to:
-  IFTTT.com: to simplify linking Google Home into the Message Bus
-  BeeBotte.com: the MQTT as a Service. And it's super generous with the number of messages allowed on the free plan. 
+- IFTTT.com: to simplify linking Google Home into the Message Bus
+- BeeBotte.com: the MQTT as a Service. And it's super generous with the number of messages allowed on the free plan. 
   
 Add the various tokens and channels for BeeBottee in mqtt-subscriber.py. 
 
