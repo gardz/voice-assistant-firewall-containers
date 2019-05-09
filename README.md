@@ -20,10 +20,10 @@ This decouples the solution into a couple of independent micro-services to simpl
 # Command Syntax
 
 	Voice Command: create firewall for DEVICENAME in LOCATION
-	Payload: {"data":[{"action":"create-for-in","what":"Mario in Melbourne"}]}
+	Payload: {"data":[{"action":"create-for-in","what":"Leigh in Melbourne"}]}
 
 	Voice Command: delete DEVICENAME in LOCATION
-	Payload: {"data":[{"action":"delete-for-in","what":"Mario in Melbourne"}]}
+	Payload: {"data":[{"action":"delete-for-in","what":"Leigh in Melbourne"}]}
 
 	Voice Command: create X new firewalls in LOCATION
 	Payload: {"data":[{"action":"create","what":"X","where":"LOCATION"}]}
