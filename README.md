@@ -17,6 +17,26 @@ This decouples the solution into a couple of independent micro-services to simpl
 - mqtt-subscriber.py: listen to the MQTT message bus to pull off specific commands that were pushed on via Google Home.
 - actions.py: take input values and actions from the messages on the bus and carry out resulting actions (i.e. create containerised firewall, push new security policy to a specific firewall, etc). 
 
+# Command Syntax
+
+	Voice Command: create firewall for DEVICENAME in LOCATION
+	Payload: {"data":[{"action":"create-for-in","what":"Mario in Melbourne"}]}
+
+	Voice Command: delete DEVICENAME in LOCATION
+	Payload: {"data":[{"action":"delete-for-in","what":"Mario in Melbourne"}]}
+
+	Voice Command: create X new firewalls in LOCATION
+	Payload: {"data":[{"action":"create","what":"X","where":"LOCATION"}]}
+
+	Voice Command: delete X firewalls in LOCATION
+	Payload: {"data":[{"action":"delete","what":"X","where":"LOCATION"}]} 
+
+	Voice Command: delete DEVICE in LOCATION
+	Payload: {"data":[{"action":"delete-for-in","what":"DEVICE in LOCATION"}]}
+
+	Voice Command: block CATEGORY on DEVICE in LOCATION
+	Payload: {"data":[{"action":"block","what":"CATEGORY on DEVICE in LOCATION}]}
+
 
 # Extra Notes
 
@@ -27,3 +47,8 @@ Sign up to:
 Add the various tokens and channels for BeeBottee in mqtt-subscriber.py. 
 
 To retrieve values back from "the network" so the voice assistant can verbally play them back, a full "Actions on Google" (or equivalent for other services like Siri/Alexa) would need to be developed instead of using IFTTT. 
+
+# RADIUS Payload Example (instead of Voice commands)
+
+	RADIUS Start: {"data":[{"action":"RADIUS-START","what":"User-Name='leigh';NAS-IP-Address='1.1.1.1';Framed-IP-Address='210.10.10.10';NAS-Identifier='Google Pixel'"}]} 
+	RADIUS Stop: {"data":[{"action":"RADIUS-STOP","what":"User-Name='leigh';NAS-IP-Address='1.1.1.1';Framed-IP-Address='210.10.10.10';NAS-Identifier='Google Pixel'"}]}
