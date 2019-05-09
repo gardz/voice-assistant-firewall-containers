@@ -14,7 +14,7 @@ This uses If This Then That (IFTTT) to hook voice commands from Google Assistant
 
 This decouples the solution into a couple of independent micro-services to simplify & speed up development:
 - ifttt: the "cloud glue" that links Google Home to the MQTT Message Bus. Why IFTTT? It made the development super fast and easy without having the need to develop a full "Actions on Google" package. 
-- mqtt-subscriber.py: listen to the MQTT message bus to pull off specific commands that were pushed on via Google Home.
+- mqtt-subscribe.py: listen to the MQTT message bus to pull off specific commands that were pushed on via Google Home.
 - actions.py: take input values and actions from the messages on the bus and carry out resulting actions (i.e. create containerised firewall, push new security policy to a specific firewall, etc). 
 
 # Command Syntax
