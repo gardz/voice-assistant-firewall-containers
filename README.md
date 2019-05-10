@@ -52,3 +52,6 @@ To retrieve values back from "the network" so the voice assistant can verbally p
 
 	RADIUS Start: {"data":[{"action":"RADIUS-START","what":"User-Name='leigh';NAS-IP-Address='1.1.1.1';Framed-IP-Address='210.10.10.10';NAS-Identifier='Google Pixel'"}]} 
 	RADIUS Stop: {"data":[{"action":"RADIUS-STOP","what":"User-Name='leigh';NAS-IP-Address='1.1.1.1';Framed-IP-Address='210.10.10.10';NAS-Identifier='Google Pixel'"}]}
+	
+# References
+- https://maker.itnerd.space/from-google-assistant-to-mqtt/
